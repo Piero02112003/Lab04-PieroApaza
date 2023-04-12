@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Clientes</title>
+  </head>
+  <body>
+    <h1>Clientes</h1>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th> </th>
+        <th>Número</th>
+        <th> </th>
+        <th>Correo electrónico</th>
+      </tr>
+      <% clientes.forEach(cliente => { %>
+        <tr>
+          <td><%= cliente.nombre %></td>
+          <td> </td>
+          <td><%= cliente.numero %></td>
+          <td> </td>
+          <td><%= cliente.correo %></td>
+        </tr>
+      <% }); %>
+    </table>
+  </body>
+</html>
